@@ -34,6 +34,10 @@
       <button id="toggle-sidebar" class="btn toggle-btn">></button>
 
       <div class="sidebar">
+        <img
+          class="side-header"
+          src="../static/assets/HeaderImages/sideHeader.png"
+        />
         <div class="side-list"></div>
         <hr />
       </div>
@@ -51,7 +55,12 @@
       <div class="bar-item" onclick="showMarkers(['식당'])">🍴식당</div>
     </div>
 
-    <form class="ai-bar" action="" method="get">
+    <form
+      class="ai-bar"
+      action=""
+      method="get"
+      onsubmit="handleFormSubmit(event);"
+    >
       <input
         id="ai-txt"
         class="ai-txt"
@@ -91,12 +100,13 @@
       >
         시설🏢
       </div>
+      <div class="bar-item1" onclick="showMarkers(['아파트'])">아파트🏦</div>
     </div>
 
     <!-- <img class="home-img" src="/static/img/home.png"> -->
 
     <div id="myModal" class="modal">
-      <button class="apply">적용</button>
+      <button class="apply" onclick="searchByFilter()">적용</button>
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="category-container">

@@ -198,9 +198,9 @@ div {
 }
 
 .ai-bar {
-  width: 400px;
+  width: 450px;
   /* 전체 너비에서 sidebar 너비를 뺀 만큼의 너비 */
-  height: 45px;
+  height: 75px;
   margin: 20px;
   display: flex;
   justify-content: space-between;
@@ -230,7 +230,7 @@ div {
   float: left;
   padding: 0px;
   color: black;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 30px;
   width: 100%;
   height: 100%;
@@ -305,10 +305,6 @@ div {
 
 .sidebar-collapsed ~ .top-bar {
   left: 0;
-}
-
-#submit {
-  margin: 0 10px;
 }
 
 .nav-link.dropdown-toggle.more::after {

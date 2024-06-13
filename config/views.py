@@ -16,3 +16,7 @@ def main_page(request):
 
 def index_page(request):
     return render(request, "index.html")
+
+
+def first_page(request):
+    return render(request, "frontscreen.html")

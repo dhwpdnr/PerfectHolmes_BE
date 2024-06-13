@@ -38,4 +38,5 @@ urlpatterns = [
     path("signup/", views.signup, name="signup"),
     path("main/", views.main_page, name="main"),
     path("index/", views.index_page, name="index"),
+    path("", views.first_page, name="first"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
